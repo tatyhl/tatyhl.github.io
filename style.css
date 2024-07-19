@@ -1,0 +1,312 @@
+
+/* INICIO PARTE COMUM - MENU & HEADER */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu-principal li{
+ display: inline;
+}
+
+#menu-principal a{
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    margin-left: 32px;
+    
+}
+#menu-principal {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    margin-right:5px;
+    text-decoration: none;
+}
+#menu-principal a:hover{
+    color: blue
+}
+
+#menu-principal a.ativo{
+    color: blue;
+    font-weight: bold;
+}
+.foto-principal{
+    background: url(./imagens/foto_principal.jpg) no-repeat center top;
+    height:200px;
+    width:100%;
+}
+
+#cabecalho{
+    max-width: 60em;
+    min-width:37.5em;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* FIM PARTE COMUM - MENU & HEADER */
+
+/* ************************************************** */
+
+/* INICIO PARTE COMUM - FOOTER */
+#rodape{
+    clear: both;
+  
+}
+
+#contacto{
+float: left;
+font-size: 16px;
+color: #000;
+margin: 12px;
+
+}
+#endereco{
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    margin: 12px;
+
+}
+
+#copyright{
+    clear: both;
+    font-size: 11px;
+    color: #000;
+    display: block;
+    margin: 0 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+footer{
+    max-width: 60em;
+    min-width: 37.5em;
+    margin: 0 auto;
+    background-color: #ccc;
+    
+}
+
+/* FIM PARTE COMUM - FOOTER */
+
+/* ************************************************** */
+
+/* INICIO PÁGINA PRINCIPAL - HOME */
+
+#conteudo{
+    max-width: 60em;
+    min-width: 17.5em;
+    margin: 0 auto;
+}
+
+#conteudo-principal{
+    float: left;
+    width: 64.5833%;
+    margin-bottom: 40px;
+}
+
+#conteudo-principal h1{
+    font-size: 2.25em;
+}
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+#conteudo-secundario{
+    float: right;
+    width: 29.1666%;
+    background-color: #0f599f;
+    margin-top: 50px;
+    color: white;
+    padding:10px;
+}
+/*#conteudo-secundario h1{
+    font-size: 0.875em;
+}*/
+#conteudo-secundario a{
+    font-size: 18px;
+    color: white
+}
+/* FIM PÁGINA PRINCIPAL - HOME */
+
+/* INICIO PÁGINA EMPRESA */
+.aside-sedeempresa{
+    margin-left:10px;
+    position: relative;
+}
+.img-sedeempresa{
+    position: absolute;
+    right:-39px;
+}
+.legenda {
+    margin: 0;
+    color: #fff;
+    background-color: #808080;
+    font-style: italic;
+    text-align: center;
+    padding: .3em .6em;
+    max-width:260px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    right: -39px;
+    bottom: -378px;
+}
+/* FIM PÁGINA EMPRESA */
+
+/* ************************************************** */
+
+/* INICIO PÁGINA SERVIÇOS */
+
+/* tabela */
+.tabela-servicos{
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.tabela-servicos caption{
+    font-size: 24px;
+    margin-bottom: .5em;
+    text-align: left;
+}
+
+.tabela-servicos th {
+    background: #0f599f;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.tabela-servicos th, .tabela-servicos td{
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    padding: .3em;
+}
+
+.tabela-servicos .prazo-entrega{
+    text-align: center;
+}
+.tabela-servicos .valor-servico{
+    text-align: right;
+}
+/* fim tabela */
+
+#conteudo-secundario-service{
+    float: right;
+    width: 29.1666%;
+    padding:10px;
+    margin-bottom: 20px;
+}
+
+/* depoimentos */
+.depoimento {
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1.5em;
+    color: #666;
+    text-align: justify;
+    margin-bottom: .5em;
+}
+.depoiment::last-child{
+    margin-bottom: 0;
+}
+.depoimento p{
+    margin-bottom: .7em;
+}
+.autor{
+    font-size: 12px;
+    text-align: right;
+    font-style: normal;
+    margin-top:0;
+}
+/* fim depoimentos */
+/* FIM PÁGINA SERVIÇOS */
+
+/* ************************************************** */
+
+/* INICIO PÁGINA CONTACTO */
+#conteudo-principal-contacto{
+    float: left;
+    width: 100%;
+}
+fieldset{
+    border: 0;
+    width:70%;
+    padding-left: 0;
+}
+
+.grupo{
+    display: flex;
+}
+.campo{
+    margin-bottom: .75em;
+}
+.nome, .empresa{
+    width: 50%;
+}
+.nome{
+    margin-right:20px;
+}
+.telefone{
+    width: 35%;
+}
+
+.departamento{
+    width:65%;
+    margin-left:20px;
+}
+.opcoes, .opcao{
+    display: flex;
+}
+.opcao {
+align-items: baseline;
+margin-right:20px;
+}
+
+.campo label{
+    display: block;
+    font-size: 1em;
+    margin-bottom: .1em;
+}
+.campo abbr{
+    color: #c00;
+    font-weight: bold;
+}
+.campo input, .campo textarea, .campo select{
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    padding: .1em 0;
+}
+.mensagem textarea{
+    height: 10em;
+
+}
+
+.newsletter{
+    margin-bottom: .75em;
+    align-items: baseline;
+}
+
+
+.submit {
+    font-size: 1em;
+    background: #0f599f;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    padding: .5em 1em;
+    margin-top: 1em;
+
+}
+
+.submit:hover{
+    background: #f90;
+    cursor: pointer;
+}
+/* FIM PÁGINA CONTACTOS */
+
